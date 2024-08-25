@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/image.png" type="image/x-icon">
+</head>
+<body>
+    <head class="container-header">
+        <div class="header">
+            <img class="image" src="./assets/image.png" alt="imagem do Pikachu">
+            <h1>Decodificador</h1>
+        </div>
+    </head>
+    <main class="main-context">    
+        <div class="container-input">
+            <div class="input">
+                <textarea class="text-entry" id="inputText" placeholder="Digite seu texto aqui..." required></textarea>
+                <p>Atenção: apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="container-button">
+                <button onclick="encryptText()" class="button" id="btnCriptografae">Criptografar</button>
+                <button onclick="decryptText()" class="button" id="btnDescriptografar">Descriptografar</button>
+            </div>
+        </div>
+        <div class="container-output">
+            <div class="output" id="outputText">
+                <h2>Sua mensagem aparecerá aqui!</h2>
+                <span>Digite um texto e clique em Criptografar ou Descriptografar.</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
